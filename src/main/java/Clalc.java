@@ -1,7 +1,6 @@
 import javax.swing.*;
 import java.awt.event.*;
-
-
+import org.*;
 class Clalc implements ActionListener
 {
     JFrame f;
@@ -11,7 +10,7 @@ class Clalc implements ActionListener
     static double a=0,b=0,result=0;
     static int operator=0;
 
-    Clalc()
+     Clalc()
     {
         f=new JFrame("Калькулятор");
         t=new JTextField();
@@ -171,6 +170,7 @@ class Clalc implements ActionListener
                 t.setText(t.getText()+s.charAt(i));
         }
     }
+
 
     public static void main(String...s)
     {
